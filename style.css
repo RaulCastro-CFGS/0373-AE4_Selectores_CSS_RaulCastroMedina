@@ -5,3 +5,8 @@
 * {
     font-family: 'Fredoka', sans-serif;
 }
+/* REGLA 2: Poner margen 0 y relleno de 20% al body */
+body {
+    margin: 0;
+    padding: 0 20%; 
+}
