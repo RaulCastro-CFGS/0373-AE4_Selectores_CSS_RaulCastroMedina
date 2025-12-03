@@ -19,12 +19,15 @@ h1 {
 
 /* Combinado de REGLAS 4 y 5 */
 .selectors {
-    
-    color: lightcyan; /* <-- REGLA 4: Cambiar color */
-    padding: 5%;      /* <-- REGLA 5: Relleno del 5% */
-    border: solid darkcyan 1px; /* <-- REGLA 5: Color del borde */
-    border-radius: 5px;         /* <-- REGLA 5: Esquinas redondeadas con 5px */
+   
+    color: rgb(0, 0, 0);                    
+    padding: 5%;                     
+    border: 2px solid darkcyan;      
+    border-radius: 5px;
 }
+
+
+
 /* REGLA 6: Cambiar color a identificadores universales */
 #universal {
     color: lightgoldenrodyellow;
@@ -33,5 +36,33 @@ h1 {
 h2.selector, h2#universal {
     background-color: darkcyan;
     padding: 1%;
+    border-radius: 5px;
+}
+/* REGLA 8: Los elementos span tendrán font-weight: 900, color negro de fondo y blanco de texto */
+span {
+    font-weight: 900;
+    background-color: black;
+    color: white;
+}
+/* REGLA 9: Los elementos a que sean hijos directos de algún li tendrán text-decoration: none */
+li > a {
+    color: darkcyan;
+    text-decoration: none
+}
+/* REGLA 10: Los elementos h3 tendrán color de fondo background-color: rgba(0, 139, 139, 0.529);, relleno de 0.5px y esquinas redondeadas con valor de 5px */
+#gallery h3 {
+    background-color: rgba(0, 139, 139, 0.529);
+    padding: 0.5px;
+    border-radius: 5px;
+    width: 100%;
+}
+/* REGLA 11: Los div dentro de la galería (#gallery div) tendrán un borde azul claro y esquinas redondeadas, separándose entre sí */
+#gallery div {
+    width: 100%;
+}
+/* REGLA 12: Las imágenes tendrán un ancho máximo del 100% de su contenedor y esquinas redondeadas 5px */
+img {
+    border: solid darkcyan 1px; 
+    width: 100%;
     border-radius: 5px;
 }
