@@ -10,3 +10,28 @@ body {
     margin: 0;
     padding: 0 20%; 
 }
+/* REGLA 3: Subrayar los h1 y alinearlos al centro */
+h1 {
+    text-decoration: underline;
+    text-align: center;
+    color: darkcyan;
+}
+
+/* Combinado de REGLAS 4 y 5 */
+.selectors {
+    
+    color: lightcyan; /* <-- REGLA 4: Cambiar color */
+    padding: 5%;      /* <-- REGLA 5: Relleno del 5% */
+    border: solid darkcyan 1px; /* <-- REGLA 5: Color del borde */
+    border-radius: 5px;         /* <-- REGLA 5: Esquinas redondeadas con 5px */
+}
+/* REGLA 6: Cambiar color a identificadores universales */
+#universal {
+    color: lightgoldenrodyellow;
+}
+/* REGLA 7: Los elementos h2 de clase selector y los h2 de ID universal se les cambiará el color a darkcyan, tendrán relleno de 1% y las esquinas redondeadas de 5px */
+h2.selector, h2#universal {
+    background-color: darkcyan;
+    padding: 1%;
+    border-radius: 5px;
+}
