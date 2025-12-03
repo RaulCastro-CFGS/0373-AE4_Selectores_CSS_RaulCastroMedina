@@ -16,17 +16,16 @@ h1 {
     text-align: center;
     color: darkcyan;
 }
-
-/* Combinado de REGLAS 4 y 5 */
+/* REGLA 4: Establezco color lightcyan a los elementos de clase .selector */
+.selector {
+    color: lightcyan
+}
+/* REGLA 5: Añado padding, border y border-radius */
 .selectors {
-   
-    color: rgb(0, 0, 0);                    
     padding: 5%;                     
-    border: 2px solid darkcyan;      
+    border: solid darkcyan 1px;      
     border-radius: 5px;
 }
-
-
 
 /* REGLA 6: Cambiar color a identificadores universales */
 #universal {
@@ -50,13 +49,12 @@ li > a {
     text-decoration: none
 }
 /* REGLA 10: Los elementos h3 tendrán color de fondo background-color: rgba(0, 139, 139, 0.529);, relleno de 0.5px y esquinas redondeadas con valor de 5px */
-#gallery h3 {
+h3 {
     background-color: rgba(0, 139, 139, 0.529);
     padding: 0.5px;
     border-radius: 5px;
-    width: 100%;
 }
-/* REGLA 11: Los div dentro de la galería (#gallery div) tendrán un borde azul claro y esquinas redondeadas, separándose entre sí */
+/* REGLA 11: Los elementos div que sean descendientes de un elemento con id "gallery" tendrán un ancho de 100%*/
 #gallery div {
     width: 100%;
 }
