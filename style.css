@@ -1,0 +1,7 @@
+/* Importar la fuente Fredoka */
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap');
+
+/* REGLA 1: Cambiamos la fuente del documento*/
+* {
+    font-family: 'Fredoka', sans-serif;
+}
