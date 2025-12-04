@@ -45,7 +45,6 @@ span {
 }
 /* REGLA 9: Los elementos a que sean hijos directos de algún li tendrán text-decoration: none */
 li > a {
-    color: darkcyan;
     text-decoration: none
 }
 /* REGLA 10: Los elementos h3 tendrán color de fondo background-color: rgba(0, 139, 139, 0.529);, relleno de 0.5px y esquinas redondeadas con valor de 5px */
@@ -63,4 +62,53 @@ img {
     border: solid darkcyan 1px; 
     width: 100%;
     border-radius: 5px;
+}
+
+
+/* -------------------- BONUS, Creación de la tabla -------------------- */
+
+/* Estilos generales de la tabla */
+table {
+border-collapse: collapse;
+width: 100%;
+max-width: 800px;
+border: none;
+margin: 0 auto;
+margin-bottom: 25px;
+margin-top: 25px;
+border-left: 2px solid #abaaaac9;
+border-right: 2px solid #abaaaac9;
+border-top: 2px solid #abaaaac9;
+border-bottom: 2px solid #abaaaac9;
+}
+
+/* Estilos para las celdas y encabezados */
+td, th {
+padding: 12px;
+text-align: left;
+vertical-align: top;
+}
+
+/* Estilo del encabezado */
+th {
+background-color: #ffffff;
+font-weight: bold;
+color: #000;
+}
+
+/* Efecto de gris y blanco */
+tbody tr:nth-child(odd) {
+background-color: #e6e6e6;
+}
+
+tbody tr:nth-child(even) {
+background-color: #ffffff;
+}
+
+/* Estilo específico para la primera columna (subrayado y cursiva) */
+td:first-child {
+font-style: italic;
+text-decoration: underline;
+color: #000;
+
 }
